@@ -1,0 +1,229 @@
+body {
+    background-image: url("./images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
+    font-family: Poppins;
+}
+
+main {
+    display: flex;
+}
+
+
+/* Left */
+.left {
+    margin-top: 23em;
+
+    width: 48%;
+
+    color: white;
+}
+
+.left-head {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2em;
+
+    width: 10em;
+    margin: 0;
+    margin-left: auto;
+    margin-right: 0.5em;
+}
+
+.left-para {
+    font-size: 16px;
+
+    width: 31.3em;
+    margin-left: auto;
+    margin-right: 1.5em;
+}
+
+/* Right */
+.right {
+    margin-top: 10em;
+    width: 35%;
+    margin-left: 5em;
+}
+
+.try-free {
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    
+    margin-bottom: 2em;
+    padding: 1.2em 5%;
+
+    width: 90%;
+
+    border-radius: 10px;
+    box-shadow: 0px 0.8em rgb(0, 0, 0, 0.2);
+
+    text-align: center;
+    font-size: 16px;
+}
+
+.try-bold {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+    /* form */
+    .form-box {
+        background-color: white;
+        width: 90%;
+        border-radius: 10px;
+
+        padding: 2em 5%;
+        align-items: center;
+        text-align: center;;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        margin: 1em 0em;
+        margin-bottom: 0px;
+        padding: 1em 2em;
+
+        border-radius: 5px;
+        border: 0.1em solid rgb(199, 199, 199);
+
+        font-size: 16px;
+        font-weight: 700;
+
+        box-sizing: border-box;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        
+        outline: none;
+    }
+
+    input:focus {
+        border: 0.1em solid hsl(248, 32%, 49%);
+        color: hsl(249, 10%, 26%);
+    }
+
+    input:focus::placeholder {
+        color: transparent;
+    }
+    
+    input[type=submit] {
+        color: white;
+        background-color: hsl(154, 59%, 51%);
+        
+        margin-bottom: 1em;
+        padding: 1.2em 0%;
+
+        width: 80%;
+
+        border-radius: 10px;
+        border: none;
+
+        box-shadow: 0px 0.2em hsl(154, 100%, 35%);
+
+        text-align: center;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    input[type=submit]:hover {
+        cursor: pointer;
+        background-color: hsl(154, 59%, 51%, 0.6);
+    }
+    .form-action {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        width: 80%;
+    }
+
+      /* This is the style of our error messages */
+      .error {
+        border-color: hsl(0, 100%, 74%);
+        border-width: 0.15em;
+      }
+
+
+
+
+    input.error {
+        border-color: hsl(0, 100%, 74%);
+    }
+
+
+    .error-logo {
+        visibility: hidden;
+
+        width: 1.5em;
+
+        position: relative;
+        bottom: 37px;
+        left: 92%;
+    }
+
+    small {
+        visibility: hidden;
+        
+        margin-top: -1.8em;
+        text-align: right;
+
+        color: hsl(0, 100%, 74%) ;
+
+        font-style: italic;
+
+        font-size: 0.75em;
+        font-weight: 500;
+    }
+
+    .byline {
+        font-size: 12px;
+        width: 10%;
+        color: hsl(246, 25%, 77%);
+    }
+
+    .terms {
+        color: hsl(0, 100%, 74%) ;
+    }
+    .terms:hover {
+        cursor: pointer;
+    }
+    
+    #email .placeholder {
+        color: red;
+    }
+
+    .attribution  {
+        margin-top: 12em;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        main {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: auto;
+        }
+
+        .left {
+            margin-top: 5em;
+            width: 100%;
+        }
+        .left-head {
+            width: 100%;
+        }
+        .left-para {
+            width: 100%;
+        }
+
+        .right {
+            margin-top: 3em;
+            width: 95%;
+            margin-left: 0em;
+        }
+        .form-box {
+            padding: 2em 0em;
+            width: 100%;
+        }
+      }
